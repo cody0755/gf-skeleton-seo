@@ -95,3 +95,9 @@
 │   └── sitemap.xml
 ```
 
+## Todo
+
+- [ ] SPF 支持
+- [ ] CDN上传和替换支持！
+- [ ] datauri(base64 支持？
+
