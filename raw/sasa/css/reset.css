@@ -1,0 +1,111 @@
+html, body, div, span, object, iframe, table, caption,
+tbody, tfoot, thead, tr, th, td, del, dfn, em, img, ins,
+kbd, q, samp, small, strike, strong, sub, sup, tt, var,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr,
+acronym, address, big, cite, code, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend {
+    vertical-align: baseline;
+    font-family: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    /*transition: all .5s;*/
+}
+:focus {
+    outline: 0;
+}
+body {
+    background-color: #eaf1f8;
+    line-height: 1;
+    font-family: "微软雅黑", Arial, Helvetica, Sans-Serif;
+    color: #333;
+    font-size: 14px;
+    /*font: 75%/150% "微软雅黑",Arial,Helvetica,Sans-Serif;*/
+}
+input, textarea{
+    font-size: 14px;
+}
+ol, ul {
+    list-style: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+caption, th, td {
+    font-weight: normal;
+    text-align: center;
+}
+.container{
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+i{
+    font-style: normal;
+}
+table {
+    width: 100%;
+    border: 1px #e3ebf4 solid;
+    text-align: center;
+    background-color: #fff;
+    font-size: 14px;
+}
+
+table .up{
+    color: #b73712;
+}
+table .down{
+    color: #427f0c;
+}
+
+table .loading{
+    height: auto;
+}
+
+th {
+    height: 35px;
+    line-height: 35px;
+    border-bottom: 1px #e3ebf4 solid;
+    border-right: 1px #e3ebf4 solid;
+    font-size: 14px;
+    font-weight: bold;
+    color: 333px;
+    text-align: center;
+    background-color: #fbfbfb;
+    /*这个要覆盖reset，不然不能垂直居中*/
+    vertical-align: middle;
+}
+
+td {
+    border-right: 1px #e3ebf4 solid;
+}
+
+tbody tr {
+    height: 50px;
+    line-height: 50px;
+}
+
+tbody tr:nth-child(even) {
+    background: #f1f9fd;
+}
+
+table a {
+    color: #0174a9;
+}
+
+.hide{
+    display: none !important;
+}
+.show {
+    display: block !important;
+}

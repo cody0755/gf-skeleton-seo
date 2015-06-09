@@ -1,0 +1,60 @@
+.container{
+	width: 1200px;
+    background-color: #fff;
+    margin:0 auto;
+}
+.header .first{
+	background-color: #f2f2f2;
+	height: 33px;
+}
+.first img{
+	float: right;
+}
+
+.header .second{
+	background-color: #fff;
+	height: 100px;
+}
+.search input{
+	float: left;
+	padding-left: 10px;
+	/*提示文字距离边框距离*/
+	border:2px solid #008bc2;
+	width: 270px;
+	height: 40px;
+
+}
+.search .subimit{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	margin-top: 30px;
+	/*搜索框的上边距*/
+	background: #008bc2 url(../images/search.png) no-repeat center center;
+ /*搜索框背景颜色属性：颜色 图片地址 不重复 水平垂直*/
+}
+
+.header .third{
+	background-color: #008fc7;
+	height: 47px;
+	font-size: 16px;
+}
+.third a{
+	display: inline-block;
+	text-align: center;
+	/*文本居中*/
+	height: 48px;
+	line-height: 48px;
+	margin-right: 27px;
+	/*任意一个A标签的块状元素居中后距离右边边框的距离*/
+}
+.bread a{
+	font-size: 12px;
+	color: #008fc7;
+	/*优先级显示某个字体颜色*/
+}
+.bread p{
+	color:#999999;
+	/*段落文字颜色*/
+}
+
