@@ -1,0 +1,8 @@
+/* icon
+ ========================================================================== */
+@import "compass/utilities/sprites";
+
+/* $icon: sprite-map("icon/*.png", $spacing: 4px);
+$icon-2x: sprite-map("icon-2x/*.png", $spacing: 4px); */
+@import "icon/*.png";
+@include all-icon-sprites;

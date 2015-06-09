@@ -1,0 +1,21 @@
+{% extends '../layouts/primary.html' %}
+
+{% block content %}
+<section id="eng">
+    {% include "../partials/categories.html" %}
+    <section id="recommended" class="clearfix">
+        <div class="recommended recommended-list recommende-listdetail">
+            <h3>Popular Videos</h3>
+            <div class="bd">
+                <ul>
+                    {% set itemUrlSep = "_popular_0_" %}
+                    {% for $item in $popular['items'] %}
+                    {% include "../partials/s-video-item.html" with $item %}
+                    {% endfor %}
+                </ul>
+                {% include "../partials/s-next-link.html" %}
+            </div>
+        </div>
+    </section>
+</section>
+{% endblock %}

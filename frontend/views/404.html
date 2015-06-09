@@ -1,0 +1,18 @@
+{% extends 'layouts/primary.html' %}
+
+{% block content %}
+<section id="eng">
+    <?php require 'categories.php' ; ?>
+    <div align="center">
+        <a href="/"><img src="/images/404.jpg" style="max-width:100%"></a>
+    </div>
+</section>
+{% endblock %}
+
+{% block primary-script %}
+<script type="text/javascript">
+    setTimeout(function() {
+        location.href = '/list';
+    }, 2000);
+</script>
+{% endblock %}

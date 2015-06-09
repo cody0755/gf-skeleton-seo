@@ -1,0 +1,23 @@
+<!-- List Navigation [s] -->
+<nav id="subNav" class="sub-nav clearfix for-web">
+    <ul>
+        <li><a href="/">Homepage</a></li>
+        {% for i in ['list', 'top', 'popular', 'category'] %}
+        <li {% if currentPage == i %}class="active"{% endif %}>
+            {% if i == 'category' %}
+            <a href="/category">Categories <i class="icon arrow-down"></i></a>
+            <div class="sub">
+                {% for item in categories %}
+                <a href="/category/{{item.alias}}">{{item.alias}}</a>
+                {% endfor %}
+            </div>
+            {% else %}
+            <a href="/{{i}}">{{i|title}}</a>
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+</nav>
+<!-- List Navigation [e] -->
+
+{% include "quick-link.html" %}

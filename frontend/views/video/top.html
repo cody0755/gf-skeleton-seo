@@ -1,0 +1,19 @@
+{% extends '../layouts/primary.html' %}
+
+{% block content %}
+<section id="eng">
+    {% include "../partials/categories.html" %}
+    <section id="top-weekly" class="clearfix">
+        <div class="top-weekly top-weekly-list">
+            <h3>Top Weekly Download</h3>
+            <ul class="clearfix">
+                {% set itemUrlSep = "_top_0_" %}
+                {% for $item in $top['items'] %}
+                {% include "../partials/s-video-item.html" with $item %}
+                {% endfor %}
+            </ul>
+        </div>
+    </section>
+        <!-- Top Weekly Download List [e] -->
+</section>
+{% endblock %}

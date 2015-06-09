@@ -1,0 +1,21 @@
+{% extends '../layouts/primary.html' %}
+
+{% block content %}
+<section id="eng">
+    {% include "../partials/categories.html" %}
+    <section id="recommended" class="clearfix">
+        <div class="recommended recommended-list recommende-listdetail">
+            <h3>{{$list['special']['name']}}</h3>
+            <div class="bd">
+                <ul>
+                    {% set itemUrlSep = "_list_"+$list['special']['id']+"_" %}
+                    {% for $item in $list['items'] %}
+                    {% include "../partials/s-video-item.html" with $item %}
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </section>
+</section>
+{% endblock %}
+
