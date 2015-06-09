@@ -44,6 +44,8 @@ app.use(express.static(__dirname+'/root', StaticOptions)); // such as robots.txt
 /*var pageModule = require('./modules/pages');
 pageModule.serve(['about', 'faq', 'contact', 'youtube-downloader-installation', 'privacy', 'terms'], app);*/
 
+require('./routers')(app);
+
 /* empty handler? 404 it */
 /* last rescure - log it */
 app.use(function(err, req, res, next) {
@@ -63,5 +65,3 @@ var server = app.listen(process.env.PORT || 3000, function() {
     var port = server.address().port;
     console.log('snaptube web app listening at http://%s:%s', host, port);
 });
-
-require('./routers')(app);

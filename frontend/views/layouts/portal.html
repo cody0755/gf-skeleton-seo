@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+  <title>关于资管</title>
+    {% block portal-style %}{% endblock %}
+</head>
+<body>
+    {% include "../partials/header.html" %}
+
+    {% include "../partials/bread.html" %}
+
+    <div class="container">
+      {% block content %}{% endblock %}
+    </div>
+
+    <div class="clear"></div>
+    {% include "../partials/footer.html" %}
+
+    {% block portal-script %}{% endblock %}
+</body>
+</html>

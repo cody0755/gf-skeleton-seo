@@ -21,9 +21,9 @@ var _ = require('lodash');
 
 var routes = {};
 // pull in all the controllers (these contain routes)
-fs.readdirSync(__dirname+'/controllers').forEach(function(controllerName) {
+/*fs.readdirSync(__dirname+'/controllers').forEach(function(controllerName) {
     require('./controllers/' + controllerName)(routes);
-});
+});*/
 
 module.exports = function(app) {
     app.serveMaps = function(map) {
@@ -37,12 +37,14 @@ module.exports = function(app) {
     };
 
 
-    app.get('/', routes.home);
-    app.get('/example1', routes.example1);
-
-    ['about', 'faq', 'contact', 'youtube-downloader-installation', 'privacy', 'terms'].forEach(function(page) {
-        app.get('/'+page, routes.pagify(page));
+    app.get('/', function(req, res) {
+        res.render('index');
     });
+    // app.get('/example1', routes.example1);
+
+    /*['about', 'faq', 'contact', 'youtube-downloader-installation', 'privacy', 'terms'].forEach(function(page) {
+        app.get('/'+page, routes.pagify(page));
+    });*/
 
     app.serveMaps(urlMaps);
     app.get('*', function(req, res, next) {
