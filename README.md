@@ -9,17 +9,17 @@
 
 前端部分包括：
 
-sass(compass) 来做 css preprocessor
-css sprite 图片精灵如何做
-retina images 怎么做
-javascript in es6 with babel
-swig 模板引擎中的 filter, layout 等用法
-useref 标注用于 concat/minify/rev 等
-bower_components 引入外部依赖（可github管理）
-vendors 引入第三方依赖库（无法github管理）
-webpack 用做 module builder （避免html中指明js依赖）
-browser-sync 用于多屏幕测试
-sourcemap 是否需要在 dev 时候关闭等
+- sass(compass) 来做 css preprocessor
+- css sprite 图片精灵如何做
+- retina images 怎么做
+- javascript in es6 with babel
+- swig 模板引擎中的 filter, layout 等用法
+- useref 标注用于 concat/minify/rev 等
+- bower_components 引入外部依赖（可github管理）
+- vendors 引入第三方依赖库（无法github管理）
+- webpack 用做 module builder （避免html中指明js依赖）
+- browser-sync 用于多屏幕测试
+- sourcemap 是否需要在 dev 时候关闭等
 
 ```bash
 ├── vendors
@@ -74,12 +74,12 @@ sourcemap 是否需要在 dev 时候关闭等
 
 后端需要考虑的是：
 
-logger 模块与设置（bunyan)
-cache(view 层 cache, 数据层 cache 等)
-全部的异步代码异常的捕获
-routes 的风格写法
-New Relic 性能监控
-代码如何发布（ view 目录切换）
+- logger 模块与设置（bunyan)
+- cache(view 层 cache, 数据层 cache 等)
+- 全部的异步代码异常的捕获
+- routes 的风格写法
+- New Relic 性能监控
+- 代码如何发布（ view 目录切换）
 
 ```bash
 ├── app.js
