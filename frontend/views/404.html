@@ -1,15 +1,12 @@
-{% extends 'layouts/primary.html' %}
+{% extends 'layouts/portal.html' %}
 
 {% block content %}
 <section id="eng">
-    <?php require 'categories.php' ; ?>
-    <div align="center">
-        <a href="/"><img src="/images/404.jpg" style="max-width:100%"></a>
-    </div>
+    <p>SOS - 404!</p>
 </section>
 {% endblock %}
 
-{% block primary-script %}
+{% block portal-script %}
 <script type="text/javascript">
     setTimeout(function() {
         location.href = '/';

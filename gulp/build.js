@@ -34,19 +34,10 @@ module.exports = function(options) {
       .pipe(jsFilter.restore())
       .pipe(cssFilter)
       .pipe($.csso())
-      // .pipe(gulp.dest(options.dist + '/styles'))
       .pipe(cssFilter.restore())
       .pipe(assets.restore())
       .pipe($.useref())
       .pipe($.revReplace())
-      // .pipe(htmlFilter)
-      // .pipe($.minifyHtml({
-      //   empty: true,
-      //   spare: true,
-      //   quotes: true,
-      //   conditionals: true
-      // }))
-      // .pipe(htmlFilter.restore())
       .pipe(gulp.dest(options.dist + '/views'))
       .pipe($.size({ title: options.dist + '/', showFiles: true }));
   });

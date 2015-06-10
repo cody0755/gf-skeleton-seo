@@ -26,29 +26,15 @@ var routes = {};
 });*/
 
 module.exports = function(app) {
-    app.serveMaps = function(map) {
-        // forEach map, split key with method and path
-    };
-
-    urlMaps = {
-        'GET /': routes.home,
-        'GET /users/:name': routes.getUserbyName,
-        'POST /users/:name': routes.updateUser
-    };
-
 
     app.get('/', function(req, res) {
         res.render('index');
     });
-    // app.get('/example1', routes.example1);
 
-    /*['about', 'faq', 'contact', 'youtube-downloader-installation', 'privacy', 'terms'].forEach(function(page) {
-        app.get('/'+page, routes.pagify(page));
-    });*/
-
-    app.serveMaps(urlMaps);
+    // info/audio/list -> info/audio/list.js
+    // info/audio/detail/:id -> info/audio/detail.j
     app.get('*', function(req, res, next) {
-        if(fs.existsSync('../frontend/views'+req.path+'.html')) {
+        if(fs.existsSync(__dirname+'/../frontend/views'+req.path+'.html')) {
             res.render(req.path.slice(1));
         } else {
             next();

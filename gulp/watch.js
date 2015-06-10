@@ -32,7 +32,7 @@ module.exports = function(options) {
       startPath: '/',
       // server: server,
       browser: browser,
-      proxy: "http://localhost:3000"
+      proxy: 'http://localhost:3000'
     });
   }
 
@@ -49,7 +49,7 @@ module.exports = function(options) {
     });
   });
 
-  gulp.task('dev', ['watch', 'nodemon'], function () {
+  gulp.task('dev', ['build', 'watch', 'nodemon'], function () {
     browserSyncInit([options.tmp + '/', options.src]);
   });
 

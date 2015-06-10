@@ -1,6 +1,35 @@
 {% extends 'layouts/portal.html' %}
 
-{% set Title = "我是一个页面标题" %}
+{% set Title = "首页" %}
+
+
+{% block banner %}
+<div class="banner">
+    <div class='bzBanner'>
+        <div class='content'>
+            <div class='col'>
+                <a href='javascript:;' >
+                    <img src='../images/banner3.jpg' width=100% />
+                </a>
+            </div>
+            <div class='col'>
+                <a href='javascript:;' >
+                    <img src='../images/banner2.jpg' width=100% />
+                </a>
+            </div>
+            <div class='col'>
+                <a href='javascript:;' >
+                    <img src='../images/banner1.jpg' width=100% />
+                </a>
+            </div>
+        </div>
+        <div class='btn'><i></i><i></i><i></i></div>
+        <a class='pre' href='javascript:;' title='上一张' ></a>
+        <a class='next' href='javascript:;' title='下一张' ></a>
+    </div>
+</div>
+{% endblock %}
+
 
 {% block portal-style %}
 <link rel="stylesheet" href="styles/index-style.css">
